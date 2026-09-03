@@ -1,1 +1,80 @@
 
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AALIZI — THE PINNACLE OF EXCELLENCE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="aalizi-pure-black">
+
+  <!-- هدر و تغییر زبان -->
+  <header class="aalizi-header">
+    <div class="header-container">
+      <div class="brand-logo" onclick="navigateTo('home')">AALIZI</div>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+        <button onclick="setLanguage('fa')" id="btn-fa">FA</button>
+        <button onclick="setLanguage('ar')" id="btn-ar">AR</button>
+      </div>
+      <button class="mobile-menu-trigger" onclick="toggleMenu()" aria-label="Toggle Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- منوی تمام صفحه اختصاصی (۱۴ بخش) -->
+  <nav class="aalizi-nav-overlay" id="navOverlay">
+    <div class="nav-content">
+      <ul class="nav-links" id="mainMenu">
+        <!-- آیتم‌های ۱۴ گانه از طریق دیتا لود می‌شوند -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- بخش اصلی صفحه نخست (HOME) -->
+  <main id="app-viewport">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="brand-crest">AALIZI</div>
+      <h1 class="brand-motto">AALIZITHEPINNACLEOFEXCELLENCE</h1>
+      
+      <!-- نمای کاخ ویژه عالی‌زی -->
+      <div class="palace-grand-showcase">
+        <div class="palace-frame">
+          <div class="palace-visual-placeholder">
+            <div class="palace-vector-monument"></div>
+            <span class="palace-caption" data-i18n="palace_title">THE GRAND PALACE OF AALIZI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-dock">
+        <button class="aalizi-btn" onclick="openMenu()" data-i18n="explore_realm">EXPLORE THE REALM</button>
+      </div>
+    </section>
+
+    <!-- نمایش سریع بخش‌های ۱۴ گانه در صفحه نخست -->
+    <section class="modules-grid-section">
+      <div class="section-title" data-i18n="domains_title">THE 14 PILLARS OF EXCELLENCE</div>
+      <div class="modules-grid" id="modulesGrid">
+        <!-- کارت‌های ۱۴ گانه به صورت داینامیک و ابری لود می‌شوند -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="aalizi-footer">
+    <div class="footer-motto">AALIZITHEPINNACLEOFEXCELLENCE</div>
+    <div class="copyright">© AALIZI. ALL RIGHTS RESERVED.</div>
+  </footer>
+
+  <script src="js/data-cloud.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
